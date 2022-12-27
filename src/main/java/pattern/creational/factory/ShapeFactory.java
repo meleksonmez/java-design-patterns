@@ -1,17 +1,18 @@
-package pattern.abs.factory;
+package pattern.creational.factory;
 
 /**
  * @author tcmsonmez
- * @created 14.12.2022 - 16:49
+ * @created 14.12.2022 - 16:35
  */
-public class ShapeFactory extends AbstractFactory {
+public class ShapeFactory {
 
-    @Override
     public Shape getShape(ShapeEnums shapeType) {
         if (shapeType == null) {
             return null;
         }
-        if (shapeType.equals(ShapeEnums.RECTANGLE)) {
+        if (shapeType.equals(ShapeEnums.CIRCLE)) {
+            return new Circle();
+        } else if (shapeType.equals(ShapeEnums.RECTANGLE)) {
             return new Rectangle();
         } else if (shapeType.equals(ShapeEnums.SQUARE)) {
             return new Square();

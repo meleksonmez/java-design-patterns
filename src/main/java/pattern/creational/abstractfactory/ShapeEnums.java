@@ -1,4 +1,4 @@
-package pattern.factory;
+package pattern.creational.abstractfactory;
 
 /**
  * @author tcmsonmez
@@ -6,7 +6,6 @@ package pattern.factory;
  */
 public enum ShapeEnums {
 
-    CIRCLE,
     RECTANGLE,
     SQUARE
 

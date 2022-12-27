@@ -1,4 +1,4 @@
-package pattern.abs.factory;
+package pattern.creational.abstractfactory;
 
 /**
  * @author tcmsonmez
